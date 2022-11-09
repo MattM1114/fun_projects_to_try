@@ -5,32 +5,34 @@ print('welcome to my computer quiz')
 playing = input("Do you want to play? ")
 print(playing)
 
-if playing != "yes":
+if playing.lower() != "yes":
     quit()
 
 print("okay! let's play :)")
 
 #these are the qustions and the answer to them  
+# .lower makes things lower case
+
 answer = input("What does CPU stand for? ")
-if answer == "central processing unit":
+if answer.lower() == "central processing unit":
     print('correct!')
 else:
     print('wrong!')
 
 answer = input("What does GPU stand for? ")
-if answer == "graphics processing unit":
+if answer.lower() == "graphics processing unit":
     print('correct!')
 else:
     print('wrong!')
 
 answer = input("what does RAM stand for? ")
-if answer == "random acesse ":
+if answer.lower() == "random access memory":
     print('correct!')
 else:
     print('wrong!')
 
-    answer = input("")
-if answer == "":
+answer = input("what does psu stand for? ")
+if answer.lower() == "power supply":
     print('correct!')
 else:
     print('wrong!')
