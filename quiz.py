@@ -10,7 +10,7 @@ if playing.lower() != "yes":
 
 print("okay! let's play :)")
 score = 0
-# these are the qustions and the answer to them  
+# these are the questions and the answer to them  
 # .lower makes things lower case
 # score counts the points
 
