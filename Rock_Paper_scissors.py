@@ -7,7 +7,7 @@ computer_wins = 0
 options = ["rock", "paper", "scissors"]
 
 while True:
-#this will get the users answer and quit if they pick q
+#this will get the users answer and quit if they pick 
     user_input = input('Type Rock/Paper/Scissors or Q to quit: ').lower()
     if user_input == "q":
         break
