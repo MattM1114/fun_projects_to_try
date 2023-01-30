@@ -27,11 +27,11 @@ age = int(input("please enter your age "))
 if height >= 120:
 	print("you are tall enough to go on this ride , congrats.")
 	if age < 12:
-		print("You're a child, you have to pay 5 $ for this ride")
+		print("You're a child, you have to pay $5  for this ride")
 	elif age <= 18:
-		print("You're a teen, you have to pay 7 $ for the ride")
+		print("You're a teen, you have to pay $7  for the ride")
 	else:
-		print("You're an adult, you have to pay 12 $ for this ride")
+		print("You're an adult, you have to pay $12  for this ride")
 else:
 	print("sorry you can't go on this ride, your not tall enough.")
 '''
@@ -51,15 +51,85 @@ else:
 '''
 
 # ex 2 this will check if it is a leap year or not
+'''
 year = int(input("Please enter a year "))
 
 if year % 4 == 0:
-    if year % 100 == 0:
-        if year % 400 == 0:
-            print("it is a leap year")
-        else:
-            print("it is not a leap year")
-    else:
-        print("it is a leap year")
+	if year % 100 == 0:
+		if year % 400 == 0:
+			print("it is a leap year")
+		else:
+			print("it is not a leap year")
+	else:
+		print("it is a leap year")
 else:
-    print("it is not a leap year")
+	print("it is not a leap year")
+'''
+
+# eg 2 this will ask if you want a photo taken well on the roller coster
+'''
+print("welcome to the rollercoaster ")
+
+height = int(input("What is your height in cm? "))
+age = int(input("please enter your age "))
+bill = 0 
+
+if height >= 120:
+	print("you are tall enough to go on this ride , congrats.")
+	if age < 12:
+		print("child ticket $5")
+		bill = 5
+	elif age <= 18:
+		print("Teen ticket $7")
+		bill = 7
+	else:
+		print("Adult ticket $12")
+		bill = 12
+	photo = input("Do you want a photo if yes type y if not type n: ")
+	if photo == "y":
+		bill += 3
+	print(f"your final bill is ${bill}")
+else:
+	print("sorry you can't go on this ride, your not tall enough.")
+'''
+# ex 3 this will ask what size pizza you want and if you want peperoni or not and if you want extra cheese or not and tells you the bill
+
+'''
+print("welcome to python pizza delivery ")
+
+size = input("what size pizza do you want if large type l, if medium type m , if small type s ")
+bill = 0
+peperoni = input(" if you want peperoni press y if not press n ")
+extra_cheese = input(" if you want extra cheese press y if not press n ")
+
+
+if size == "s":
+	bill += 15
+	print("small pizza cost $15")
+elif size == "m":
+	bill += 20
+	print("medium pizza cost $20")
+elif size == "l":
+	bill += 25
+	print("large pizza cost $25")
+
+if peperoni == "y":
+	if size == "s":
+		bill += 2
+		print("$2 has been added to your bill")
+	else:
+		print("$3 has been added to your bill")
+
+if extra_cheese == "y":
+	bill += 1
+	print("$1 has been added to your bill")
+
+print(f"your total bill is ${bill}")
+'''
+
+# logical operators and, or , not
+# and both things have to true
+# or one thing has to be true
+# not reverses a conditions
+
+# ex 4
