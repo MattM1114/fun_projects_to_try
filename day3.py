@@ -132,4 +132,47 @@ print(f"your total bill is ${bill}")
 # or one thing has to be true
 # not reverses a conditions
 
-# ex 4
+# ex 4 love score tester
+'''
+print("Welcome to the love calculator!")
+name1 = input("What is your name?\n")
+name2 = input("what is your partners name?\n")
+
+combined_names = name1 + name2
+lower_names = combined_names.lower()
+t = lower_names.count("t")
+r = lower_names.count("r")
+u = lower_names.count("u")
+e = lower_names.count("e")
+
+
+true = t + r + u + e
+
+l = lower_names.count("l")
+o = lower_names.count("o")
+v = lower_names.count("v")
+e = lower_names.count("e")
+
+love = l + o + v + e 
+
+love_score = str(true) + str(love)
+
+
+if int(love_score) < 10 or int(love_score) > 90:
+    print(f"your love is explosive, your love score is {love_score}")
+elif int(love_score) >= 40 and int(love_score) <= 50:
+    print(f"you are alright together , your score is {love_score}")
+else:
+    print(f"your love score is {love_score}")
+'''
+
+# choose your own adventure game 
+
+
+print(" Welcome to pick your own adventure game ")
+
+right = input("if you want to go right press r ")
+left = input("if you want to go left press l ")
+swim = input("if you want to swim press s ")
+wait = input("if you want to wait for a ship press w")
+red = input("")
