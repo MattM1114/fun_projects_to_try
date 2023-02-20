@@ -25,7 +25,7 @@ random_side = random.randint(0, 1)
 
 if random_side == 1:
     print("Heads")
-else: 
+else:
     print("Tails")
 '''
 
@@ -49,7 +49,7 @@ list1 = [1, 2, 3, 4]
 # there is more  functions in the documentation
 
 # ex 1 banker roulette with out the choice() function
-
+'''
 
 names_string = input("Give me everybody's names, separated by a comma. ")
 names = names_string.split(", ")
@@ -64,3 +64,64 @@ person_who_will_pay2 = random.choice(names)
 
 print(person_who_will_pay + " is going to buy the meal today!")
 print(person_who_will_pay2 + " is going to buy the meal today!")
+'''
+# ex 2 treasure map this show that you can put a list with in a list
+# and show you how you can manipulate that list after .
+'''
+row1 = ["⬜️", "️⬜️", "️⬜️"]
+row2 = ["⬜️", "⬜️", "️⬜️"]
+row3 = ["⬜️️", "⬜️️", "⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+
+horizontal = int(position[0])
+vertical = int(position[1])
+
+row = map[vertical - 1]
+row[horizontal - 1] = "X"
+
+print(f"{row1}\n{row2}\n{row3}")
+'''
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+
+computer_choice = random.randint(0, 2)
+
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for paper or 2 for Scissors.\n")
+
+if computer_choice == 2 and user_choice == 0:
+    print("you win!")
+elif computer_choice == 0 and user_choice == 2:
+    print("you lose!")
+elif computer_choice > user_choice:
+    print("You lose!")
+elif user_choice > computer_choice:
+    print("you win!")
+else:
+    print("you picked a invalid number, you lose!")
