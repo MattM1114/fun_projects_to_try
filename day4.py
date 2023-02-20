@@ -24,15 +24,15 @@ print(f"Your love score is {love_score}")
 random_side = random.randint(0, 1)
 
 if random_side == 1:
-    print("Heads")
+	print("Heads")
 else:
-    print("Tails")
+	print("Tails")
 '''
 
 # eg 1 list
 '''
 provinces_SA = ["Eastern Cape", "Free State", "Gauteng", "KwaZulu Natal",
-                "Limpopo", "Mpumalanga", "North west", "Northern cape", "Western cape"]
+				"Limpopo", "Mpumalanga", "North west", "Northern cape", "Western cape"]
 list1 = [1, 2, 3, 4]
 '''
 # this is how you would get a certain part of the list
@@ -84,44 +84,51 @@ row[horizontal - 1] = "X"
 print(f"{row1}\n{row2}\n{row3}")
 '''
 rock = '''
-    _______
+	_______
 ---'   ____)
-      (_____)
-      (_____)
-      (____)
+	  (_____)
+	  (_____)
+	  (____)
 ---.__(___)
 '''
 
 paper = '''
-    _______
+	_______
 ---'   ____)____
-          ______)
-          _______)
-         _______)
+		  ______)
+		  _______)
+		 _______)
 ---.__________)
 '''
 
 scissors = '''
-    _______
+	_______
 ---'   ____)____
-          ______)
-       __________)
-      (____)
+		  ______)
+	   __________)
+	  (____)
 ---.__(___)
 '''
 
 
 computer_choice = random.randint(0, 2)
 
-user_choice = int(input("What do you choose? Type 0 for Rock, 1 for paper or 2 for Scissors.\n")
+game_images = [rock, paper, scissors]
+user_choice = int(
+    input("What do you choose? Type 0 for Rock, 1 for paper or 2 for Scissors.\n"))
 
-if computer_choice == 2 and user_choice == 0:
-    print("you win!")
-elif computer_choice == 0 and user_choice == 2:
-    print("you lose!")
-elif computer_choice > user_choice:
-    print("You lose!")
-elif user_choice > computer_choice:
-    print("you win!")
-else:
+if user_choice >= 3 or user_choice < 0:
     print("you picked a invalid number, you lose!")
+else:
+    print(game_images[user_choice])
+    print(f"the computer choose: {game_images[computer_choice]}")
+    if computer_choice == 2 and user_choice == 0:
+        print("you win!")
+    elif computer_choice == 0 and user_choice == 2:
+        print("you lose!")
+    elif computer_choice > user_choice:
+        print("You lose!")
+    elif user_choice > computer_choice:
+        print("you win!")
+    elif computer_choice == user_choice:
+        print("it was a tie")
