@@ -1,10 +1,4 @@
 {
-  "cSpell.ignoreWords": [
-    "Gauteng",
-    "Thonny",
-    "pemdaslr"
-  ],
-  "cSpell.words": [
-    "Mpumalanga"
-  ]
+  "cSpell.ignoreWords": ["Gauteng", "Thonny", "pemdaslr"],
+  "cSpell.words": ["fizzbuzz", "Mpumalanga"]
 }
