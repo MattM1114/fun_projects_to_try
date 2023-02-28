@@ -1,18 +1,13 @@
-# Step 1
 
-from .hangman_words import word_list
-from .hangman_art import stages, logo
+import hangman_art
+import hangman_words
 import random
 
-{
-    "python.autoComplete.extraPaths": ["FUN_PROJECTS_TO_TRY/day7"]
-}
 
-
-print(logo)
+print(hangman_art.logo)
 
 # this is how to get the word from the list randomly
-word = random.choice(word_list)
+word = random.choice(hangman_words.word_list)
 # this will find the length of the and will display a _ in place of the letter
 
 
@@ -45,4 +40,4 @@ while not end_of_game:
         end_of_game = True
         print("you win")
 
-    print(stages[lives])
+    print(hangman_art.stages[lives])

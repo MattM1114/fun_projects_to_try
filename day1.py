@@ -1,7 +1,7 @@
 # eg 0 this will print one line
-
+'''
 print("hello world!")
-
+'''
 # ex 0 this will print multiple lines
 '''
 print("Day 1 - Python Print Functions")
@@ -62,11 +62,10 @@ you cant use privileged words like the name of  that are built functions in
 
 # band name generator
 # this is a simple program that takes the name of the user's birth city or town and their 1st pet name or the type of pet and joins them eg Durban Honey
-"""
-print("Hey future band leader or rapper let's find you a name")
 
-birth_place = input("What is the name of the city or town you were born in?\n")
-pet = input("What was your first pet or what was it's name?\n")
+print("Wellcome to the Band Name Generator.")
 
-print("Your band or rapper name could be " + birth_place + ' ' + pet + '.')
-"""
+brith_place = input("What is the name of the city you grew up in?")
+pet = input("What is your pet's name")
+
+print("Your band name could be" + brith_place + pet)
