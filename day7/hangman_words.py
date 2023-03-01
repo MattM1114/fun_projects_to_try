@@ -213,5 +213,3 @@ word_list = [
     'zodiac',
     'zombie',
 ]
-
-
