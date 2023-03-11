@@ -34,6 +34,7 @@ while not end_of_game:
         if lives == 0:
             end_of_game = True
             print("you lose.")
+            print(f"the word was word {word}")
 
     print(f"{' '.join(display)}")
     if "_" not in display:
