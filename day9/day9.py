@@ -1,5 +1,6 @@
 # dict = dictionary
-'''programming_dictionary = {"Bug": "An error in a program that prevents the program from running as expected.",
+''''
+programming_dictionary = {"Bug": "An error in a program that prevents the program from running as expected.",
 "Function": "A piece of code that you can easily call over and over again."}'''
 
 '''print(programming_dictionary["Bug"])'''
@@ -103,20 +104,37 @@ print(art.logo)
 
 playing = True
 while playing :
-    bidders = []
+    bidders = {}
 
+# this finds the highest bidder
+    def find_highest_bid(biding_record):
+        high_bid = 0
+        winner = ""
+        for bidder in biding_record:
+            bid_amount = biding_record[bidder]
+            if bid_amount > high_bid:
+                high_bid = bid_amount
+                winner = bidder
+        print(f"The winner is {winner} with a bid of ${high_bid}")
 
+# this adds bidders
     def bidders_update():
-        new_bid = {}
         name = input("what is your name?: ")
         bid = int(input("What is your bid: $"))
-        new_bid.update({name:bid})
-        bidders.append(new_bid)
+        bidders.update({name:bid})
+    
     
 
     bidders_update()
-    more_bid = input("Are there any other bidders? Type 'yes or 'no'. ").lower()
+    bidding = True
+# this calls all the functions and ends the game
+    while bidding:
+        more_bid = input("Are there any other bidders? Type 'yes or 'no'. ").lower()
 
-    if more_bid == "yes":
-        clear_terminal()
-        bidders_update()
+        if more_bid == "yes":
+            clear_terminal()
+            bidders_update()
+        elif more_bid == "no":
+            bidding = False
+            playing = False
+            find_highest_bid(bidders)
