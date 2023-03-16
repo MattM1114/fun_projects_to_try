@@ -95,9 +95,9 @@ def calculator():
     for symbol in operations:
         print(symbol)
 
-    should_contiue = True
+    should_continue = True
 
-    while should_contiue:
+    while should_continue:
         operations_symbol = input("pick an operation  ")
 
         num2 = float(input("what is the next number? "))
@@ -116,7 +116,7 @@ def calculator():
         if continue_last_result == "y":
             num1 = answer
         else:
-            should_contiue = False
+            should_continue = False
             calculator()
 
 calculator()
