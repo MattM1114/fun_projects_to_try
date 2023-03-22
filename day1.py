@@ -60,12 +60,12 @@ They can't have a space in between if you are using two words so instead you wou
 you cant use privileged words like the name of  that are built functions in  
 '''
 
-# band name generator
-# this is a simple program that takes the name of the user's birth city or town and their 1st pet name or the type of pet and joins them eg Durban Honey
+# band name generator this is a simple program that takes the name of the user's birth city or town and their 1st pet
+# name or the type of pet and joins them eg Durban Honey
 
-print("Wellcome to the Band Name Generator.")
+print("Welcome to the Band Name Generator.")
 
-brith_place = input("What is the name of the city you grew up in?")
-pet = input("What is your pet's name")
+brith_place = input("What is the name of the city you grew up in? ")
+pet = input("What is your pet's name ")
 
-print("Your band name could be" + brith_place + pet)
+print("Your band name could be " + brith_place + pet)
