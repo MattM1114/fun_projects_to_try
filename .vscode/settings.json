@@ -1,5 +1,10 @@
 {
-  "cSpell.ignoreWords": ["Gauteng", "Thonny", "pemdaslr"],
+  "cSpell.ignoreWords": [
+    "Gauteng",
+    "Thonny",
+    "exitonclick",
+    "pemdaslr"
+  ],
   "cSpell.words": [
     "ardvark",
     "fizzbuzz",
