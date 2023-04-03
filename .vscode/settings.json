@@ -8,8 +8,10 @@
   "cSpell.words": [
     "ardvark",
     "Backrub",
+    "colorgram",
     "fizzbuzz",
     "Mpumalanga"
   ],
-  "vscode-pets.throwBallWithMouse": true
+  "vscode-pets.throwBallWithMouse": true,
+  "DockerRun.DisableDockerrc": true
 }
