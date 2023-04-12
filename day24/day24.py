@@ -30,3 +30,18 @@ with open ("new_file.txt", mode = "w") as file:
     file.write("new txt.")
 """
 # this only works when the file does exists and when the open method aka function is in write mode 
+
+# this how you locate a file when it is not in the same file 
+"""
+with open("C:/Users/User/Desktop/my_file.txt") as file:
+    contents = file.read()
+    print(contents)
+    file.close()
+"""
+
+# ex1 
+""""
+with open("../../Desktop/my_file.txt") as file:
+    contents = file.read()
+    print(contents)
+"""
