@@ -11,9 +11,11 @@ age = 25         # An integer variable
 price = 2.99     # A float variable
 is_student = True  # A boolean variable
 
-my_list = [1, 2, 3, 4]    # A list variable
+my_list = [1, 2, 3, 4, "apple", "orange" ]    # A list variable
 my_tuple = ("apple", "banana", "cherry")   # A tuple variable
 my_set = {"apple", "banana", "cherry"}     # A set variable
+
+
 
 
 def add_numbers(x, y):
