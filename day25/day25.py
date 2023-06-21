@@ -2,7 +2,7 @@
     data_ = data_file.readlines()
     print(data_)"""
 # or the on below which is  better than now I will take each temperature and turn it into a string 
-"""
+
 import csv
 
 with open("weather_data.csv") as data_file:
@@ -13,12 +13,12 @@ with open("weather_data.csv") as data_file:
         if row[1] != "temp":
             temperature.append(int(row[1]))
     print(temperature)
-"""
+
 # here we will learn about pandas which is not 
 # inbuilt so you will have to type
 # "pip install pandas into your "command line aka terminal
 # to do the same thing but cleaner and with less code
-import pandas  
+import pandas
 
 """
 data =pandas.read_csv("weather_data.csv")
