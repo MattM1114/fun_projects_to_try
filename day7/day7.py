@@ -8,6 +8,7 @@ print(hangman_art.logo)
 
 # this is how to get the word from the list randomly
 word = random.choice(hangman_words.word_list)
+print(word)
 # this will find the length of the and will display a _ in place of the letter
 
 
