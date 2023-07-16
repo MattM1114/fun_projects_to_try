@@ -13,5 +13,6 @@
     "Mpumalanga"
   ],
   "vscode-pets.throwBallWithMouse": true,
-  "DockerRun.DisableDockerrc": true
+  "DockerRun.DisableDockerrc": true,
+  "vscode-pets.theme": "forest"
 }
