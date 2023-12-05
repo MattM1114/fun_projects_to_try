@@ -54,4 +54,4 @@ while max(players_scores) < max_score:
 
 max_score = max(players_scores)
 winner = players_scores.index(max_score)
-print(f"player{winner+1}is the winner")
+print(f"player{winner+1} is the winner with a score of {max_score}")

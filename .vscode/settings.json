@@ -10,7 +10,8 @@
     "Backrub",
     "colorgram",
     "fizzbuzz",
-    "Mpumalanga"
+    "Mpumalanga",
+    "pygame"
   ],
   "vscode-pets.throwBallWithMouse": true,
   "DockerRun.DisableDockerrc": true,
